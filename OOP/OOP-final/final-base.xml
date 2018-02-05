@@ -1,0 +1,77 @@
+<diagram program="umletino" version="14.2"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>370</x><y>0</y><w>110</w><h>90</h></coordinates><panel_attributes>Person
+--
+name: String
+SSN: Int
+address: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>590</y><w>130</w><h>80</h></coordinates><panel_attributes>Residential
+--
+noBedrooms: Integer
+noBaths: Integer
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>360</y><w>180</w><h>160</h></coordinates><panel_attributes>Property
+--
+location: String
+availability: Boolean
+rentOrSell: Boolean
+--
+bid(amount: Integer)
+rent(cost: Integer)
+buy(price: Integer)
+signLease(signature: String)
+signContract(signature: String)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>210</x><y>400</y><w>120</w><h>60</h></coordinates><panel_attributes>Property Description
+--
+size: Integer
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>570</x><y>130</y><w>160</w><h>70</h></coordinates><panel_attributes>Agent
+--
+agency: String
+--
+receiveBid(amount: Integer)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>340</x><y>220</y><w>110</w><h>110</h></coordinates><panel_attributes>Contract
+--
+date: Integer
+amount: Integer
+property: Property
+--
+verify()
+sign()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>570</x><y>210</y><w>130</w><h>140</h></coordinates><panel_attributes>Bid
+--
+date: Integer
+offer: Integer
+whenNeeded: Integer
+--
+getClient()
+setClient()
+getProperty()
+setProperty()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>130</y><w>100</w><h>70</h></coordinates><panel_attributes>Owner
+--
+
+--
+createContract()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>130</y><w>100</w><h>100</h></coordinates><panel_attributes>Client
+--
+clientInfo: String
+--
+checkCredit()
+getMyBids()
+setMyBids()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>590</y><w>120</w><h>80</h></coordinates><panel_attributes>Commercial
+--
+noBuildings: Integer
+use: Integer
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>710</y><w>90</w><h>80</h></coordinates><panel_attributes>House
+--
+lotSize: Integer
+pool: Boolean
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>710</y><w>90</w><h>60</h></coordinates><panel_attributes>Apartment
+--
+floor: Integer
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>710</y><w>140</w><h>60</h></coordinates><panel_attributes>Land
+--
+isDeveloped: Boolean
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>640</x><y>710</y><w>130</w><h>60</h></coordinates><panel_attributes>Building
+--
+hasInternet: Boolean
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>660</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>660</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>660</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>510</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>510</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>80</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>80</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>40</y><w>200</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;180;10;180;90</additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>660</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>420</y><w>110</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=1</panel_attributes><additional_attributes>90;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>390</x><y>150</y><w>20</w><h>30</h></coordinates><panel_attributes>1</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>160</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>150</y><w>100</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;80;20</additional_attributes></element><element><id>Text</id><coordinates><x>440</x><y>150</y><w>20</w><h>30</h></coordinates><panel_attributes>1</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>190</y><w>140</w><h>210</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=0..*</panel_attributes><additional_attributes>10;10;10;180;120;180</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>190</y><w>180</w><h>250</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=0..*</panel_attributes><additional_attributes>150;10;150;220;10;220</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>220</y><w>50</w><h>160</h></coordinates><panel_attributes>lt=-
+m1=0..*
+m2=0..*</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>280</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>310</x><y>350</y><w>40</w><h>20</h></coordinates><panel_attributes>owns</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>640</x><y>390</y><w>80</w><h>20</h></coordinates><panel_attributes>inChargeOf</panel_attributes><additional_attributes></additional_attributes></element></diagram>

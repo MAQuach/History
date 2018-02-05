@@ -1,0 +1,22 @@
+;;;Michael Quach
+;;;mquach2013@fau.edu
+
+(defun filter-out-the (list)
+    (cond ((null list) nil)
+((equal (car ‘(the)) (car list)) (filter-out-the (cdr list)))
+(t (cons(car list)(filter-out-the (cdr list)))))
+)
+
+(defun schedule (list day)
+    (cond (equalp day (elt (caar list) 0)) (cdr list)
+(equalp day (elt (cdar list) 0)) (cadr list)
+(equalp day (elt (cddar list) 0)) (cdadr list)
+(equalp day (elt (cdddar list) 0)) (cddadr list)
+(equalp day (elt (cddddar list) 0)) (cdddadr list)
+(equalp day (elt (cdddddar list) 0)) (cddddadr list)
+(equalp day (elt (cddddddar list) 0)) (cdddddadr list)
+)    
+
+(defun eq_list (list1 list2)
+    (and (equalp list1 list2)(equal list1 list2))
+)

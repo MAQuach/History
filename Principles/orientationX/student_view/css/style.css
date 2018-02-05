@@ -1,0 +1,478 @@
+
+
+/*index.php*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+#name h2{
+    color: dodgerblue;
+    text-align: center;
+    font-size: 1.5em; !important
+}
+
+
+.background-image {
+    background-image: url('http://www.sportrivalry.com/wp-content/uploads/2016/02/UP22web_Stadium_RyanMurphy.jpg');
+    background-size: cover;
+    display: block;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    height: 700px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 1;
+}
+
+.tint {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.5);    
+}
+
+
+#text_header{
+    text-align: right;
+    font-size: 24px;
+    font-weight:bold  
+
+}
+
+#text_subheader{
+    text-align: right;
+    font-size: 12px;
+    font-weight:bold;
+    color:red;    
+
+}
+
+
+
+.login_header{
+    padding-bottom: 5%; 
+}
+
+
+
+
+
+.login_container{
+
+    display:block;    
+    width:50%;
+    height:65%;    
+    background: rgba(255, 255, 255, 1);
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    top: 10%;
+    position: absolute;
+    margin-left: 20px;
+    margin-right: 20px;
+    right: 25%;
+    z-index: 2;
+    padding:  10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;    
+    border-radius: 10px;
+}
+
+
+
+.login_container h3{
+
+    display:inline-block;
+
+}
+
+
+.login_container input{
+
+    float:right;
+    width: 80%;
+    margin-top: 20px;
+    height: 30px;
+    padding: 0px 10px;
+    background-color:#c3c3c3;
+    border: none;    
+}
+
+
+.login_container button{
+
+    float:right;
+    width: 80%;
+    margin-top: 20px;
+    height: 30px;
+    padding: 0px 10px; 
+}
+
+.login_footer {
+
+    text-align: right;
+    float:right;
+    width: 40%;
+    margin-top: 10px;
+    height: 30px;
+    padding: 0px 10px;   
+}
+
+
+
+/*Student_landing.php*/
+
+
+#print_student_name{
+    color:#c6001d;
+    
+}
+
+
+
+.logo_student_view{
+
+    display:block;
+    margin: 10px auto;
+    position:relative;
+    width: 200px;
+    height: 176px;
+}
+
+
+
+
+.student_header{
+    width: 100%;
+    height: 100px;
+    background-color: #013a6f;
+    border-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: #c6001d;
+    position: fixed;
+    z-index: 9999;
+
+}
+
+
+.student_container{
+    position:relative;
+
+}
+
+.button_panel{
+    top:1%;
+    right:1%;
+    position: fixed;
+    width:200px;
+    z-index:9999;
+    text-align:center;
+    
+}
+
+.button_panel a{
+    display:block;
+    background-color: #d41e25;
+    color:white;
+    margin-bottom:5px;
+}
+
+
+.button_panel a:hover{
+    text-decoration: none;
+    background-color: #c11b21;
+    color:white;
+    
+}
+
+.button_panel a:visited{
+    text-decoration: none;
+    color:white;
+    
+}
+
+.term{
+    
+    color: white;
+    font-family: 'Patua One', cursive;
+    text-align: center;
+    margin : 0;
+    position: fixed;
+    top: 1%;
+    left: 2%;
+
+}
+
+.counter{
+    color:#c6001d;
+    font-family: 'Patua One', cursive;
+    text-align: center;
+}
+
+
+#logout_block{
+    position:fixed !important;
+    top:25% !important;
+    left:42% !important;
+    
+}
+
+
+/*student view personal info*/
+
+.personal_info_static{
+    overflow:hidden;
+      display:block;
+    font-size: 21px;
+    margin-bottom: 15px;
+    
+    
+    
+}
+
+
+#creditStanding, #residency, #semester_info, #college, #major{
+    color: #4267b2;
+    float:right;
+}
+
+#studentType{
+
+    float:left;
+}
+
+#campusChooser{
+    color:#4267b2;
+    width: 407px;
+    float: right;
+}
+
+#campusChooser select{
+    color:#4267b2;
+}
+
+
+/*form styles*/
+
+#choseCampus{
+    display: none;
+}
+
+
+#msform {
+    width: 700px;
+    min-height: 49px;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+}
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10%;
+
+    /*stacking fieldsets above each other*/
+    position: relative;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+/*inputs*/
+#msform input, #msform textarea {
+}
+/*buttons*/
+}
+/*headings*/
+.fs-title {
+    padding-left:15%;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.fs-subtitle {
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+/*progressbar*/
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+
+}
+#progressbar li {
+    list-style-type: none;
+    color: blue;
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 15%;
+    float: left;
+    position: relative;
+}
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 20px;
+    line-height: 20px;
+    display: block;
+    font-size: 9px;
+    color: white;
+    background: red;
+    border-radius: 3px;
+    margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: blue;
+    position: absolute;
+    left: -42%;
+    top: 9px;
+    z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+    background: #27AE60;
+    color: white;
+}
+
+.progressFormatting{
+    text-align: center;
+    padding-left: 60px;
+}
+
+a {
+    text-decoration: none !important;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+    width:100%;
+    margin-bottom: 10px;
+}
+
+.previous:hover{
+    background-color:#d0cdcd;
+}
+
+.pickadate {
+    background-color: #d41e25;
+    color: white;
+    width:100%;
+    margin-bottom: 10px;
+}
+
+.pickadate:hover{
+    background-color:#c11b21;
+    color:white;
+}
+
+.next {
+    background-color:#27ae60;
+    color:white;
+    font-size: 16px;
+    padding: 8px 16px;
+    border:none;
+    width:100%;
+    margin-bottom: 10px;
+}
+
+.next:hover{
+    background-color:#1a7440;
+    box-shadow: 1px solid #cccccc;
+    color:white;
+}
+
+
+#positionProgress{
+    margin-right: 8%;
+}
+
+
+#errormessage{
+    color:red;
+}
+
+#edit_button{
+
+    width:100%;
+    display:inline-block;
+    padding: 8px 16px;
+    float:right;
+    background-color:#4267b2;
+    color:white;
+    border:none;
+
+}
+
+
+#edit_button:hover{
+    background-color: #2C4577;
+}
+
+
+.submit-button{
+    background-color:#27ae60;
+    color:white;
+    font-size: 16px;
+    padding: 8px 16px;
+    border:none;
+    width:100%;
+    margin-bottom: 10px;
+}
+
+.submit-button:hover{
+    background-color:#1a7440;
+    box-shadow: 1px solid #cccccc;
+    color:white;
+}
+
+#returnlogin{
+    margin: 0 auto;
+}
+
+.date_header{
+    color: #4267b2;
+    font-size:16px;
+    font-family: 'Patua One', cursive;
+}
+
+#orientationdate{
+    margin-bottom: 10px;
+}
+
+#campus{
+    color:red;
+    position: relative;
+    right:7%;
+}
+

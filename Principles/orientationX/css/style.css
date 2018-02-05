@@ -1,0 +1,185 @@
+
+
+/*index.php*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+.background-image {
+  background-image: url('http://www.sportrivalry.com/wp-content/uploads/2016/02/UP22web_Stadium_RyanMurphy.jpg');
+  background-size: cover;
+  display: block;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  height: 700px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+}
+
+.tint {
+    
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.5);    
+}
+
+
+#text_header{
+    position:absolute;
+    right:3%;
+    top:3%;
+    font-size: 24px;
+    font-weight:bold;  
+        
+}
+
+#text_subheader{
+    text-align: right;
+    font-size: 12px;
+    font-weight:bold;
+    color:red;    
+        
+}
+
+
+
+.login_header{
+    padding-bottom: 5%; 
+}
+
+
+
+
+.login_container{
+    
+  display:block;    
+  width:50%;
+  height:70%;    
+  background: rgba(255, 255, 255, 1);
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  top: 10%;
+  position: absolute;
+  margin-left: 20px;
+  margin-right: 20px;
+  right: 25%;
+  z-index: 2;
+  padding:  10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto;    
+  border-radius: 10px;
+}
+
+
+
+.login_container h3{
+    
+ display:inline-block;
+    
+}
+
+
+.login_container input{
+    
+    float:right;
+    width: 80%;
+    margin-top: 20px;
+    height: 30px;
+    padding: 0px 10px;
+    background-color:#faffbd;
+    border: none;    
+}
+
+
+.login_container button{
+    
+    float:right;
+    width: 80%;
+    margin-top: 20px;
+    height: 30px;
+    padding: 0px 10px; 
+}
+
+.login_footer {
+    
+    text-align: right;
+    float:right;
+    width: 40%;
+    margin-top: 10px;
+    height: 30px;
+    padding: 0px 10px;   
+}
+
+
+
+/*Student_landing.php*/
+
+.student_header:before,
+.student_header:after {
+    content: "";
+    display: table;
+}
+
+.student_header:after{
+    clear:both;
+}
+
+
+.student_header{
+    width: 100%;
+    height: 150px;
+    background-color: #013a6f;
+    border-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: #c6001d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    
+}
+
+.term{
+
+    color: white;
+    font-family: 'Patua One', cursive;
+    text-align: center;
+    margin : 0 0 0 0;
+    position: fixed;
+    display:inline;
+    top: 1%;
+    left: 2%;
+    
+}
+
+.counter{
+    display: inline;
+    position:absolute;
+    color:#d40f45;
+    font-family: 'Patua One', cursive;
+    margin : 0 0 0 0;
+    right: 2%;
+    top: 6%;
+    
+}
+
+.student_container{
+    position:relative;
+    display:fixed;
+    width:700px;
+    height:700px;
+    margin: 20% 10% 10% 10% ;
+}
+
+

@@ -1,0 +1,21 @@
+Michael Quach
+mquach2013@fau.edu
+
+1.
+a. D
+b. (G R S)
+c. (PURPLE 1)
+d. ((SIZE-OF-HALL 350))
+e. (OIL VINEGAR)
+f. (#\B)
+g. (("marsh" 43))
+h. B
+i. 4TH
+j. (CDR ((A B) (C D) (E F)))
+
+2.
+list == list given in question statement
+a. (car(cdr(cdr'(list))))
+b. (car(car(cdr'(list))))
+c. (car(car(car(cdr(cdr'(list))))))
+d. (car(cdr(car'(list))))
